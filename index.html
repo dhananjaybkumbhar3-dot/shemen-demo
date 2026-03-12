@@ -933,17 +933,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ══════════════════════════════════════════════
      CONSENT BANNER (replaces CookieYes for demo)
      ══════════════════════════════════════════════ -->
-<div class="consent-banner" id="consentBanner">
-  <p class="consent-text">
-    🍪 We use cookies to personalise your experience and analyse our traffic.
-    This includes Google Analytics, Google Ads, and Meta Pixel.
-    <a href="#">Cookie Policy</a>
-  </p>
-  <div class="consent-buttons">
-    <button class="btn-decline" onclick="handleConsent(false)">Decline</button>
-    <button class="btn-accept" onclick="handleConsent(true)">Accept All</button>
-  </div>
-</div>
 
 <!-- ══════════════════════════════════════════════
      CONTACT SECTION
@@ -1104,7 +1093,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   let debugOpen = true;
 
   /* ── Show consent banner after 1.5s ── */
-  window.addEventListener('load', () => {
+ /* window.addEventListener('load', () => {
     setTimeout(() => {
       document.getElementById('consentBanner').classList.add('visible');
     }, 1500);
